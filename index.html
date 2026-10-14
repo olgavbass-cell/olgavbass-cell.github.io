@@ -10,6 +10,33 @@
 #marketing-results .ob-impact{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px 26px;margin:24px 0}#marketing-results .ob-impact article{border-top:2px solid #8c70a7;padding-top:14px;min-width:0}#marketing-results .ob-impact h4{font-size:18px;line-height:1.35;font-weight:500;color:#dfc7ff;margin:0 0 9px}#marketing-results .ob-impact p{font-size:15px;line-height:1.55;margin:0;color:#d0cad8}@media(max-width:760px){#marketing-results .ob-impact{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:480px){#marketing-results .ob-impact{grid-template-columns:1fr;gap:20px}}
 
 #marketing-results .ob-section{padding:64px 48px;max-width:1240px}#marketing-results h2{max-width:900px}#marketing-results .ob-funnel{grid-template-columns:repeat(5,minmax(0,1fr))}@media(max-width:1000px){#marketing-results .ob-section{padding:48px 30px}}@media(max-width:600px){#marketing-results .ob-section{padding:40px 22px}#marketing-results .ob-funnel{grid-template-columns:1fr}}
+
+/* Responsive funnel: one aligned desktop row, vertical on narrow screens. */
+#marketing-results .ob-funnel{display:grid;grid-template-columns:repeat(9,minmax(0,1fr));gap:12px;align-items:stretch;margin:24px 0 30px;padding:24px 0}
+#marketing-results .ob-stage{display:flex;align-items:center;min-width:0;min-height:66px;padding:8px 16px 8px 0;font-size:14px;line-height:1.45;overflow-wrap:normal}
+#marketing-results .ob-stage:after{content:'→';position:absolute;top:50%;right:-5px;left:auto;transform:translateY(-50%);font-size:18px;line-height:1}
+#marketing-results .ob-stage:last-child:after{content:none}
+#marketing-results .ob-copy{align-items:start}
+#marketing-results .ob-copy h3{min-height:60px}
+#marketing-results .ob-impact{grid-template-columns:repeat(3,minmax(0,1fr));gap:26px}
+#marketing-results .ob-impact article{margin:0}
+#marketing-results .ob-section{width:100%;min-width:0}
+@media(max-width:1050px){
+#marketing-results .ob-funnel{grid-template-columns:1fr;padding:16px 0;gap:0}
+#marketing-results .ob-stage{min-height:48px;padding:12px 0 12px 30px;font-size:16px}
+#marketing-results .ob-stage:after{content:'↓';left:0;right:auto;top:50%;transform:translateY(-50%)}
+#marketing-results .ob-stage:last-child:after{content:'•'}
+}
+@media(max-width:760px){
+#marketing-results .ob-copy{grid-template-columns:1fr;gap:20px}
+#marketing-results .ob-copy h3{min-height:0}
+#marketing-results .ob-impact{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:480px){
+#marketing-results .ob-impact{grid-template-columns:1fr}
+#marketing-results h2{font-size:30px;line-height:1.2;overflow-wrap:break-word}
+#marketing-results .ob-copy h3{font-size:22px}
+}
 </style><div class="ob-section">
 <div class="ob-label">02 / Как я оцениваю результат</div>
 <h2 id="marketing-results-title">Всё ещё верите в «+150% к прибыли благодаря маркетингу»?</h2>
