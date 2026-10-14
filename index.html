@@ -6,13 +6,17 @@ header nav a{padding:8px 10px;flex:0 1 auto}
 @media(max-width:1200px){header{grid-template-columns:minmax(0,1fr) auto;gap:16px}header nav{grid-column:1/-1;grid-row:2;justify-content:flex-start}header .nav-contact{display:inline-flex;grid-column:2;grid-row:1}}
 @media(max-width:680px){header{padding:14px 22px;gap:12px}header nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px;overflow:visible;padding:4px}header nav a{white-space:normal;min-width:0;min-height:40px;line-height:1.3;padding:8px;text-align:center}header nav a:last-child{grid-column:1/-1}}
 </style><style>
-/* Compact navigation buttons with natural widths. */
-header{grid-template-columns:210px minmax(0,1fr) auto;gap:18px;padding-top:16px;padding-bottom:16px}
-header nav{display:flex;flex-wrap:wrap;justify-content:flex-start;align-items:center;gap:6px;width:auto;max-width:100%;padding:0;background:transparent;border:0;border-radius:0;overflow:visible}
-header nav a{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;min-height:34px;padding:7px 10px;font-size:13px;line-height:1.25;white-space:nowrap;background:#4c3465;border:1px solid #78568f;border-radius:5px;color:#f0e7ff}
+/* Mobile-first compact navigation. */
+header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px;padding:12px 18px}
+header .brand{grid-column:1;grid-row:1;min-width:0;font-size:16px}
+header .brand span{font-size:10px;line-height:1.4}
+header .nav-contact{display:inline-flex;grid-column:2;grid-row:1;max-width:120px;min-height:38px;padding:9px 10px;font-size:11px;text-align:center}
+header nav{display:flex;grid-column:1/-1;grid-row:2;flex-wrap:wrap;align-items:center;justify-content:flex-start;gap:6px;width:auto;max-width:100%;min-width:0;padding:0;background:transparent;border:0;border-radius:0;overflow:visible}
+header nav a{display:inline-flex;flex:0 0 auto;align-items:center;justify-content:center;min-width:0;min-height:40px;padding:8px 11px;font-size:12px;line-height:1.25;white-space:nowrap;background:#4c3465;border:1px solid #78568f;border-radius:5px;color:#f0e7ff}
+header nav a:last-child{grid-column:auto}
 header nav a:hover,header nav a:focus-visible{background:#c1a5ff;color:#27202f}
-@media(max-width:1200px){header{grid-template-columns:minmax(0,1fr) auto;gap:12px}header nav{grid-column:1/-1;grid-row:2;justify-content:flex-start}header .nav-contact{grid-column:2;grid-row:1}}
-@media(max-width:680px){header{padding:12px 18px;gap:10px}header nav{display:flex;grid-template-columns:none;gap:6px;padding:0;width:auto;justify-content:flex-start}header nav a{flex:0 0 auto;min-height:36px;padding:8px 10px;font-size:12px;white-space:nowrap}header nav a:last-child{grid-column:auto}header .brand{font-size:16px}header .brand span{font-size:10px}header .nav-contact{max-width:120px;min-height:36px;padding:9px 10px;font-size:11px}}
+@media(min-width:681px){header{padding:16px 30px;gap:12px}header .brand{font-size:19px}header .brand span{font-size:12px}header .nav-contact{max-width:none;font-size:13px;padding:10px 14px}header nav a{min-height:36px;padding:8px 12px;font-size:13px}}
+@media(min-width:1201px){header{grid-template-columns:210px minmax(0,1fr) auto;gap:18px;padding:18px max(48px,calc((100vw - 1144px)/2))}header nav{grid-column:2;grid-row:1;justify-content:flex-start}header .nav-contact{grid-column:3;grid-row:1}}
 </style></head><body>
 <header><a class="brand" href="#">Ольга Басс<span>Маркетинг · Продукт · Продажи</span></a><nav aria-label="Разделы сайта"><a href="#expertise">Экспертиза</a><a href="#marketing-results">Подход</a><a href="#experience">Опыт</a><a href="#consulting">Консультации</a><a href="#contact">Контакты</a></nav><a class="nav-contact" href="https://t.me/loa_creative" target="_blank" rel="noopener">Написать в Telegram</a></header>
 <main><section class="hero wrap"><div class="hero-copy"><p class="eyebrow">B2B IT · SaaS · MarTech</p><h1>Ольга Басс</h1><p class="role">Head of Marketing<br>Product Marketing Lead</p><p class="intro">Работаю на стыке продукта,<br class="desktop"> маркетинга и продаж.</p><p class="muted lead">Выстраиваю маркетинг сложных технологических продуктов: стратегия, позиционирование, выход на рынок и поддержка продаж.</p><div class="actions"><a class="button" href="#contact">Обсудить сотрудничество</a><a class="button resume-download" href="Olga_Bass_Resume_Short.pdf" download>Краткое резюме · PDF</a></div></div><figure class="portrait"><img src="portrait.jpeg" alt="Ольга Басс" width="960" height="1280"><figcaption>17 лет в технологических компаниях<br>и digital-бизнесе</figcaption></figure></section>
